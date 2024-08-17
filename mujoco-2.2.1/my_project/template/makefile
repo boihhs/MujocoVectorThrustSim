@@ -17,10 +17,10 @@ CC = cl
 ROOT = main
 
 all:
-	$(CC) $(COMMON) main.c $(LIBS) -o $(ROOT)
+	$(CC) $(COMMON) main.cpp $(LIBS) -o $(ROOT)
 
 main.o:
-	$(CC) $(COMMON) -c main.c
+	$(CC) $(COMMON) -c main.cpp
 
 clean:
 	rm *.o ../../bin/$(ROOT)
